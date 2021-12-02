@@ -36,7 +36,7 @@ export default function App() {
         {first.map(addName)}
         <th>Last Name</th>
         <th>Location</th>
-        <th></th>
+        <th>Role</th>
       </table>
     </div>
   );
