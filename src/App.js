@@ -10,13 +10,34 @@ let first = [
   "Amori",
   "Laurent",
   "Ye",
-  "Semi",
+  "Sami",
   "Maxwell",
   "Groana",
   "Aland",
   "Jean",
   "Lorena"
 ];
+
+let last = [
+  "Allen",
+  "Schupack",
+  "Truong",
+  "Prass",
+  "Suero",
+  "Terrana",
+  "Walker",
+  "Steele",
+  "Benjam",
+  "Paing",
+  "Lieberman",
+  "Williams",
+  "Melendez",
+  "Kuang",
+  "Saldarriaga",
+  "Castillo"
+];
+
+let location = [""];
 
 function addName(firstName) {
   return (
