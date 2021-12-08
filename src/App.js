@@ -1,22 +1,4 @@
 import "./styles.css";
-let first = [
-  "Keturah",
-  "Matthew",
-  "Judy",
-  "Omari",
-  "Melody",
-  "Aldo",
-  "Reginea",
-  "Amori",
-  "Laurent",
-  "Ye",
-  "Sami",
-  "Maxwell",
-  "Groana",
-  "Aland",
-  "Jean",
-  "Lorena"
-];
 
 let last = [
   "Allen",
@@ -37,28 +19,50 @@ let last = [
   "Castillo"
 ];
 
-let location = [""];
+let location = [
+  "Brooklyn",
+  "Brooklyn",
+  "Brookyln",
+  "Brooklyn",
+  "Brooklyn",
+  "New Jeresy",
+  "Queens"
+];
 
-function addName(firstName) {
+let people = [
+  { first: "First Name", last: "Last Name", location: "Location" },
+  { first: "Keturah", last: "Allen", location: "Brooklyn" },
+  { first: "Matt", last: "Schupack", location: "Brooklyn" },
+  { first: "Judy" },
+  { first: "Omari" },
+  { first: "Melody" },
+  { first: "Aldo" },
+  { first: "Reginea" },
+  { first: "Amori" },
+  { first: "Laurent" },
+  { first: "Ye" },
+  { first: "Sami" },
+  { first: "Maxwell" },
+  { first: "Groana" },
+  { first: "Aland" },
+  { first: "Jean" },
+  { first: "Lorena" }
+];
+
+function addName(person) {
   return (
     <tr>
-      <td>{firstName}</td>
+      <td>{person.first}</td>
+      <td>{person.last}</td>
+      <td>{person.location}</td>
     </tr>
   );
 }
 
-let name = first.map(addName);
-
 export default function App() {
   return (
     <div className="App">
-      <table>
-        <th>First Name</th>
-        {first.map(addName)}
-        <th>Last Name</th>
-        <th>Location</th>
-        <th>Role</th>
-      </table>
+      <table>{people.map(addName)}</table>
     </div>
   );
 }
