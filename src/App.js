@@ -1,24 +1,5 @@
 import "./styles.css";
 
-let last = [
-  "Allen",
-  "Schupack",
-  "Truong",
-  "Prass",
-  "Suero",
-  "Terrana",
-  "Walker",
-  "Steele",
-  "Benjam",
-  "Paing",
-  "Lieberman",
-  "Williams",
-  "Melendez",
-  "Kuang",
-  "Saldarriaga",
-  "Castillo"
-];
-
 let location = [
   "Brooklyn",
   "Brooklyn",
@@ -33,20 +14,20 @@ let people = [
   { first: "First Name", last: "Last Name", location: "Location" },
   { first: "Keturah", last: "Allen", location: "Brooklyn" },
   { first: "Matt", last: "Schupack", location: "Brooklyn" },
-  { first: "Judy", last: "Truong" },
-  { first: "Omari" },
-  { first: "Melody" },
-  { first: "Aldo" },
-  { first: "Reginea" },
-  { first: "Amori" },
-  { first: "Laurent" },
-  { first: "Ye" },
-  { first: "Sami" },
-  { first: "Maxwell" },
-  { first: "Groana" },
-  { first: "Aland" },
-  { first: "Jean" },
-  { first: "Lorena" }
+  { first: "Judy", last: "Truong", location: "Brooklyn" },
+  { first: "Omari", last: "Prass", location: "" },
+  { first: "Melody", last: "Suero" },
+  { first: "Aldo", last: "Terrana" },
+  { first: "Reginea", last: "Walker" },
+  { first: "Amori", last: "Steele" },
+  { first: "Laurent", last: "Benjamin" },
+  { first: "Ye", last: "Paing" },
+  { first: "Sami", last: "Lieberman" },
+  { first: "Maxwell", last: "Williams" },
+  { first: "Groana", last: "Melendez" },
+  { first: "Aland", last: "Kuang" },
+  { first: "Jean", last: "Saldarriaga" },
+  { first: "Lorena", last: "Castillo" }
 ];
 
 function addName(person) {
