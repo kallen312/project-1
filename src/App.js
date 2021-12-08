@@ -33,7 +33,7 @@ let people = [
   { first: "First Name", last: "Last Name", location: "Location" },
   { first: "Keturah", last: "Allen", location: "Brooklyn" },
   { first: "Matt", last: "Schupack", location: "Brooklyn" },
-  { first: "Judy" },
+  { first: "Judy", last: "Truong" },
   { first: "Omari" },
   { first: "Melody" },
   { first: "Aldo" },
@@ -50,10 +50,16 @@ let people = [
 ];
 
 function addName(person) {
+  let font = "redFont";
+
+  if (person.first === "Keturah") {
+    font = "blueFont";
+  }
+
   return (
     <tr>
-      <td>{person.first}</td>
-      <td>{person.last}</td>
+      <td className={font}>{person.first}</td>
+      <td style={{ backgroundColor: "lightpink" }}>{person.last}</td>
       <td>{person.location}</td>
     </tr>
   );
